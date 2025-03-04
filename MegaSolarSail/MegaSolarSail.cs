@@ -8,7 +8,9 @@ namespace MegaSolarSail
     [BepInPlugin("cn.tursom.MegaSolarSail", "MegaSolarSail", "0.0.1")]
     public class MegaSolarSail : BaseUnityPlugin
     {
+#pragma warning disable CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑添加 "required" 修饰符或声明为可为 null。
         private static ConfigEntry<double> EnergyMulCfg;
+#pragma warning restore CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑添加 "required" 修饰符或声明为可为 null。
         private static double EnergyMul => EnergyMulCfg.Value;
 
         void Start()

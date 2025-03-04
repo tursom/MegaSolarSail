@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <Import Project="../DefaultPath.props" />
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.BaseLib" Version="5.4.17" />
+    <PackageReference Include="BepInEx.Core" Version="5.4.17" />
+    <Reference Include="UnityEngine">
+      <HintPath>$(DysonSphereProgramPath)\DSPGAME_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(DysonSphereProgramPath)\DSPGAME_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(DysonSphereProgramPath)\DSPGAME_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
